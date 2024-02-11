@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Broadcasting Faq</title>
+    <link rel="stylesheet" href="./assets/css/faq.css" />
+    <link rel="stylesheet" href="./assets/css/comment.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+
+    <header>
+      <a href="./index.html" hreflang="#blog">
+          <img src="./img/boslogo.png" alt="">
+        </a>
+      <!-- <h2 class="logo">BOS</h2> -->
+      <!-- <nav class="navigation">
+        <a href="index2.html">Back</a> -->
+        <!-- <a href="two.html">Berita</a>
+        <a href="three.html">Cuaca</a>
+        <a href="four.html">Tentang Kami</a>
+        <a href="five.html">Acara</a> -->
+      </nav>
+  </header>
+
+    <div class="wrapper">
+      <p>Masih bingung tentang informasi website?
+      </p>
+      <h1>ada beberapa pertanyaan yang related nih</h1>
+
+      <div class="faq">
+        <button class="accordion">
+          Apa itu broadcasting of SMANEKA ?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            broadcasting of smaneka merupakan sebuah organisasi yang bergerak di 4 bidang terutama photografi, chinematografi, website development, dan broadcasting itu sendiri
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          Apa aja sih kegiatan yang di lakukan anak anak BOS
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Kegiatan yang di lakukan anggota kami biasanya meliputi siaran langsung event di sekolah sih....
+            Jadi kami kayak live gitu habis itu upload deh after movie event di instagram. Ga cuman itu, kami juga biasa mengadakan potcast untuk bincang bincang mengenai event apa sih yang mau di laksanakan sekolah. Sama yang ga kalah penting anak anak BOS bisa buat website juga loh.... Ini contohnya wkwkwk
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          Pendaftarannya kapan aja nih
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Buat pendaftaran member baru, kami ga asal pilih orang loh. Jadi akan di buka 1 tahun sekali setiap seletah mpls dan peserta yang mendaftar harus menyertakan portofolio kegiatan waktu smp buat bisa masuk BOS. Eits... ada nih jalur khusus yaitu bagi kamu yang mempunyai soft skill editing dan web dev akan ada jalur khusus yaa.
+            Stay Tuned Guys.....
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          Kira kira udah capek Di event, ada ga benefitnya?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Eits... Jangan salah, di BOS ini kamu mendapat banyak sekali benefitnya, salah satunya adalah mendapat relasi ke sekolah sekolah lain dan juga bisa up skill kamu buat nanti cari uang jajan tambahan nih....
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          Ada senioritas ga ya ? masih takut gabung kak :(
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Tenang tenang, di broadcast tidak ada senioritas yaa, jadi bebas mau menyatakan aspirasi dan juga pendapat kalian di sinii. Membernya solid semua kok tanang aja ya
+          </p>
+        </div>
+      </div>
+
+      <div class="faq">
+        <button class="accordion">
+          BOS itu ekskul apa organisasi ya?
+          <i class="fa-solid fa-chevron-down"></i>
+        </button>
+        <div class="pannel">
+          <p>
+            Bukan dua dua nya sih... Jadi kami adalah komunitas untuk kamu bisa belajar dan up skill kamu di komunitas ini yaa...
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var acc = document.getElementsByClassName("accordion");
+      var i;
+
+      for (i = 0; i < acc.length; i++) {
+        acc[i].addEventListener("click", function () {
+          this.classList.toggle("active");
+          this.parentElement.classList.toggle("active");
+
+          var pannel = this.nextElementSibling;
+
+          if (pannel.style.display === "block") {
+            pannel.style.display = "none";
+          } else {
+            pannel.style.display = "block";
+          }
+        });
+      }
+    </script>
+  </body>
+</html>
